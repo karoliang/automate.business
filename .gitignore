@@ -1,0 +1,40 @@
+# Secrets and credentials: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+.netrc
+credentials*.json
+service-account*.json
+secrets/
+master.key
+.infisical.json
+.aws/
+.supabase/
+
+# Customer and business data: never commit real data
+/data/
+/exports/
+/backups/
+*.dump
+*.sql.gz
+
+# Local state
+.DS_Store
+.vscode/
+.idea/
+*.log
+node_modules/
+dist/
+build/
+.turbo/
+.cache/
+coverage/
+tmp/
+.paperclip/

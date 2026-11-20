@@ -1,0 +1,14 @@
+automate.business
+Copyright 2026 The automate.business Authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+automate.business is planned to be based on Paperclip
+(https://github.com/paperclipai/paperclip), which is licensed under the
+MIT License, Copyright (c) 2025 Paperclip AI and Paperclip Labs, Inc.
+When Paperclip code is brought into this repository, its MIT license and
+all third-party notices will be kept in THIRD_PARTY_NOTICES.
+
+"Paperclip" is a name used by Paperclip Labs, Inc. automate.business is
+an independent project and is not affiliated with or endorsed by
+Paperclip Labs, Inc.
