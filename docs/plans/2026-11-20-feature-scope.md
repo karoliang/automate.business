@@ -165,6 +165,8 @@ All MVP. Details and code references in the foundation plan, section 7.
 | Feature | Source | Priority |
 |---|---|---|
 | Rebrand of the fork (npm scope, CLI name, UI strings, logos, links); keep copyright lines | Build | MVP |
+| Brand overlay: one `brand.css` token overlay (colors, Geist, radius, remapped Tailwind palette), brand-name and terms module, replacement assets, Streamlined shell only. See `docs/research/2026-11-20-paperclip-design-system.md` | Build | MVP |
+| Logo mark and favicon (none exists yet) | Design | MVP |
 | Vendor telemetry and phone-home disabled (usage telemetry, feedback export, announcements, update check, cloud connector) | Harden | MVP |
 | Third-party notices file and in-app open source licenses page | Build | MVP |
 | Images ship without proprietary agent CLIs or SDKs (Claude Code, Copilot, Cursor) | Harden | MVP |
