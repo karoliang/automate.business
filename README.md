@@ -51,7 +51,7 @@ See [SECURITY.md](SECURITY.md) for vulnerability reporting and the rules for com
 | 4. Self-improvement | Reflection loop, evals from real work, model routing by quality and cost |
 | 5. Hosted cloud | Cell provisioning, billing, portal, backups, upgrades, monitoring |
 
-Details: [foundation plan](docs/plans/2026-11-20-paperclip-foundation-plan.md) and [feature scope](docs/plans/2026-11-20-feature-scope.md).
+Details: [foundation plan](docs/plans/2026-11-20-paperclip-foundation-plan.md), [feature scope](docs/plans/2026-11-20-feature-scope.md) and [business lifecycle](docs/plans/2026-11-20-business-lifecycle.md).
 
 ## Contributing
 

@@ -134,7 +134,7 @@ All MVP. Details and code references in the foundation plan, section 7.
 | Business brings its own model keys or subscriptions per company | Inherit (AI connections) | MVP |
 | BYOK keys stored in the business's Infisical project, injected only into its own sandboxes | Build | MVP |
 | Spend view per model and per agent | Inherit | MVP |
-| Managed model access billed by us (no BYOK) | Build | Later |
+| Managed models (backlog): models through Amazon Bedrock in each cell, priced as included credits per tier plus overage at a published rate; margin (about 10 percent) set after legal review; pursue the AWS Bedrock partner route and Anthropic approval first. BYOK stays required for any Claude Code agent path. | Build | Later (backlog) |
 | Optional model gateway (LiteLLM, pinned by digest) | Integrate | Later |
 
 ## 9. automate.business cloud platform (Model B)
@@ -165,6 +165,8 @@ All MVP. Details and code references in the foundation plan, section 7.
 | Feature | Source | Priority |
 |---|---|---|
 | Rebrand of the fork (npm scope, CLI name, UI strings, logos, links); keep copyright lines | Build | MVP |
+| Brand overlay: one `brand.css` token overlay (colors, Geist, radius, remapped Tailwind palette), brand-name and terms module, replacement assets, Streamlined shell only. See `docs/research/2026-11-20-paperclip-design-system.md` | Build | MVP |
+| Logo mark and favicon (none exists yet) | Design | MVP |
 | Vendor telemetry and phone-home disabled (usage telemetry, feedback export, announcements, update check, cloud connector) | Harden | MVP |
 | Third-party notices file and in-app open source licenses page | Build | MVP |
 | Images ship without proprietary agent CLIs or SDKs (Claude Code, Copilot, Cursor) | Harden | MVP |
@@ -191,6 +193,8 @@ Decided 2026-11-20:
 - Development database: one Supabase project on the existing plan.
 - Production: an AWS server (cell) per business; RDS premium tier approved as a roadmap option.
 - Demo account: later, once paid AWS server fees are approved.
+
+- Design before kickoff: the owner does the full design, user flows and end-to-end screen flow once the plan is complete. No build starts before sign-off.
 
 Still open:
 1. Production database per business (managed Supabase project or RDS in the cell).
