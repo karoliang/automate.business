@@ -134,7 +134,7 @@ All MVP. Details and code references in the foundation plan, section 7.
 | Business brings its own model keys or subscriptions per company | Inherit (AI connections) | MVP |
 | BYOK keys stored in the business's Infisical project, injected only into its own sandboxes | Build | MVP |
 | Spend view per model and per agent | Inherit | MVP |
-| Managed model access billed by us (no BYOK) | Build | Later |
+| Managed models (backlog): models through Amazon Bedrock in each cell, priced as included credits per tier plus overage at a published rate; margin (about 10 percent) set after legal review; pursue the AWS Bedrock partner route and Anthropic approval first. BYOK stays required for any Claude Code agent path. | Build | Later (backlog) |
 | Optional model gateway (LiteLLM, pinned by digest) | Integrate | Later |
 
 ## 9. automate.business cloud platform (Model B)
