@@ -192,6 +192,12 @@ Original recommendation: A for every tier at launch, with PrivateLink once the p
 9. Append-only external audit log.
 10. Ask-first defaults for outbound money and messaging actions (send email, pay invoice, refund, post publicly).
 11. CI: CodeQL, secret scanning, dependency review on our fork.
+12. Remove the UX labs and perf routes mounted without login (`ui/src/App.tsx:816-819`) and all dev-only screens.
+13. Remove forced bypass flags in adapters we keep (claude-local permission skip; cursor-local and hermes `--yolo`; opencode-local `sudo -n`).
+14. Replace the 20 `paperclip_cloud_connector` OAuth methods (Google apps, GitHub, Asana) with our own OAuth apps.
+15. Replace all 40 upstream workflows with routed jobs on the runner router; drop `pull_request_target` with secrets.
+
+Full screen and feature list with dispositions: `docs/research/2026-11-20-paperclip-feature-inventory.md`.
 
 Offer each fix upstream as a PR; keep our patch set small so upgrades stay cheap.
 
@@ -199,6 +205,7 @@ Offer each fix upstream as a PR; keep our patch set small so upgrades stay cheap
 
 | Phase | Scope | Exit criteria |
 |---|---|---|
+| Design (before kickoff) | Owner-led full product design: user flows, end-to-end screen flow and UI design for both models (cloud and self-run), built on the business lifecycle and the Paperclip feature inventory. No build starts until this is done. | Owner signs off the design |
 | 0. Verify | Throwaway instance, no real data: confirm the env leak, test whether remote sandbox providers inherit server secrets, test Supabase direct connection and migrations, measure upgrade cost across two releases. Needs owner go-ahead. | Written results; patch set confirmed or reduced |
 | 1. Secure cell | Fork, rebrand, hardening patch set, Infisical provider, AWS sandbox provider, one-cell deployment on AWS + Supabase + S3 | Independent security review passes; cell rebuilt from scratch by script |
 | 2. Integrations | Curated SMB connector set (Google Workspace send, Microsoft 365 mail and files, HubSpot, QuickBooks, Xero via our hosted OAuth apps), provider event adapters, ask-first presets, Activepieces bridge, HTTP agent-as-a-service template, Cua driver | A pilot business connects its core apps without registering OAuth apps |

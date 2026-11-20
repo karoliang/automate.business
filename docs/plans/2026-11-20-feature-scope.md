@@ -192,6 +192,8 @@ Decided 2026-11-20:
 - Production: an AWS server (cell) per business; RDS premium tier approved as a roadmap option.
 - Demo account: later, once paid AWS server fees are approved.
 
+- Design before kickoff: the owner does the full design, user flows and end-to-end screen flow once the plan is complete. No build starts before sign-off.
+
 Still open:
 1. Production database per business (managed Supabase project or RDS in the cell).
 2. Which 2 or 3 agent roles ship in the MVP pilot.
